@@ -2,6 +2,24 @@
 
 Aplicación de ejemplo en Java para gestionar automóviles (GUI Swing).
 
+## Objetivo académico
+
+Desarrollar una aplicación en Java que permita gestionar una clase A (`Automovil`) y dos clases derivadas B y C (`AutomovilGasolina` y `AutomovilElectrico`) realizando las operaciones de inserción, búsqueda individual, eliminación, listado de objetos y el cálculo de un valor asociado a uno de sus atributos. La información se almacena en memoria principal a través de una colección (`List`). La arquitectura es monolítica con un solo cliente que accede a la lógica mediante una interfaz gráfica amigable.
+
+### Caso de estudio y requisitos satisfechos
+
+- Implementa el **patrón MVC**: separa modelo, vista y controlador en paquetes distintos.
+- Clase estructural A (`Automovil`) con dos derivadas B y C; cada una sobrescribe métodos para cálculo de consumo usando polimorfismo.
+- Clase B (`AutomovilGasolina`) asociada a una clase D (`TanqueCombustible`).
+- Clase C (`AutomovilElectrico`) implementa la interfaz `IAplicable`.
+- Cálculo polimórfico: cada tipo de automóvil calcula un valor (por ejemplo consumo) mediante métodos sobreescritos.
+- Interfaz gráfica con varias `JFrame`/`JPanel`, cada una gobernando un caso de uso (insertar, listar, buscar, eliminar, calcular).
+- Ventana principal (`MainFrame`) incluye menú con acceso a las funciones y un menú “Ayuda > Acerca de…” con información del equipo y versión.
+- Código subido a GitHub (esta URL) para cumplir con la entrega.
+
+Estos puntos se alinean con las directrices del curso de Desarrollo de Aplicaciones Empresariales de la Universidad de Ibagué, primer prototipo 2026A.
+
+
 ## Descripción
 
 Proyecto educativo que muestra una pequeña arquitectura MVC con repositorio en memoria, servicios y vistas Swing.
